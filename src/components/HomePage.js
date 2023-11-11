@@ -1,0 +1,66 @@
+import React from 'react'
+import Header from './Header'
+import { FaBook, FaGraduationCap, FaLanguage } from 'react-icons/fa' 
+import Works from './Works'
+import FirstChat from './FirstChat'
+import Iqra from './Iqra'
+import Ratings from './Rating'
+import SecondChat from './SecondChat'
+import Testimonial from './Testimonial'
+import BlogHome from './BlogHome'
+import Questions from './Questions'
+
+const HomePage = () => {
+  return (
+    <div>
+      <Header />
+      <div className='home section-center'>
+        <div className='home-title'>
+          <h3>éducation pour une vie supérieure</h3>
+          <p>de quoi avez-vous besoin d'aide?</p>
+        </div>
+        <div className='home-details'>
+          <article className='home-article-1'>
+            <span className='icon'>
+              <FaBook />
+            </span>{' '}
+            <h3>récitez et mémorisez le Coran à votre propre rythme</h3>
+          </article>
+          <article className='home-article-2'>
+            <span className='icon'>
+              <FaGraduationCap />
+            </span>{' '}
+            <h3> améliorez vos connaissances islamiques</h3>
+            <p>
+              étudiez une variété de sujets islamiques tels que le Coran, le
+              tajweed, l'histoire islamique, l'aqidah et le fiqh.
+            </p>
+            <button className='btn'>inscrivez-vous maintenant</button>
+          </article>
+          <article className='home-article-3'>
+            <span className='icon'>
+              <FaLanguage />
+            </span>
+
+            <h3>parlez arabe en toute confiance !</h3>
+          </article>
+        </div>
+      </div>
+      <Works />
+      <FirstChat />
+      <Iqra />
+      <Ratings />
+      <SecondChat />
+      <Testimonial
+        videoUrl='https://www.youtube.com/embed/YOUR_VIDEO_ID'
+        name='John Doe'
+        description="John's experience with our service was exceptional. He highlights the benefits he gained and how it helped him in his journey."
+        rating={4.5}
+      />
+      <BlogHome/>
+      <Questions/>
+    </div>
+  )
+}
+
+export default HomePage

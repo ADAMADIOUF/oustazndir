@@ -34,7 +34,7 @@ const Works = () => {
         </article>
       </div>
       <h3>c'est vraiment aussi simple !</h3>
-      <button className='btn'>commencez à apprendre</button>
+      <button className='btn-header'>commencez à apprendre</button>
     </div>
   )
 }

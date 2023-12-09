@@ -5,15 +5,18 @@ import Works from './Works'
 import FirstChat from './FirstChat'
 import Iqra from './Iqra'
 import Ratings from './Rating'
-import SecondChat from './SecondChat'
 import Testimonial from './Testimonial'
 import BlogHome from './BlogHome'
 import Questions from './Questions'
+import TopHeader from './TopHeader'
+import FirstBanner from './FirstBanner'
 
 const HomePage = () => {
   return (
     <div>
+      <TopHeader/>
       <Header />
+      <FirstBanner/>
       <div className='home section-center'>
         <div className='home-title'>
           <h3>éducation pour une vie supérieure</h3>
@@ -50,12 +53,9 @@ const HomePage = () => {
       <FirstChat />
       <Iqra />
       <Ratings />
-      <SecondChat />
+    
       <Testimonial
-        videoUrl='https://www.youtube.com/embed/YOUR_VIDEO_ID'
-        name='John Doe'
-        description="John's experience with our service was exceptional. He highlights the benefits he gained and how it helped him in his journey."
-        rating={4.5}
+        
       />
       <BlogHome/>
       <Questions/>

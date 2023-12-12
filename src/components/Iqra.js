@@ -7,7 +7,7 @@ const Iqra = () => {
   return (
     <div className='iqra section-nav'>
       <div className='iqra-title'>
-        <h3>Pourquoi Iqra</h3>
+        <h3>Pourquoi Nurul quran</h3>
       </div>
       <div className='iqra-container'>
         <article>

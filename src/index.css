@@ -204,7 +204,11 @@ text-transform: uppercase;
   box-shadow: var(--light-shadow);
   background-color: var(--clr-white);
 }
-
+.logo img{
+  margin-top: 3rem;
+  width: 250px;
+ 
+}
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -339,6 +343,7 @@ line-height: 20px; /* 142.857% */
   background: #9A3412;
 }
 .top-header-details{
+  margin-top: 3rem;
   display: flex;
 align-items: center;
 justify-content: center;
@@ -377,6 +382,9 @@ font-style: normal;
 font-weight: 700;
 
 }
+.header-content h3{
+  font-size: 2rem;
+}
 .header-line{
   position:absolute ;
   top:20%;
@@ -393,12 +401,21 @@ flex-shrink: 0;
 background:lightgray 50% / cover no-repeat;
 
 }
+.header-big-img{
+  padding: 1rem;
+  display: flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient(0deg, rgba(33, 29, 27, 0.92) 0%, rgba(27, 27, 33, 0.92) 100%),  lightgray 50% / cover no-repeat;
+
+}
 .header-bg-header{
 margin-top: -1rem;
 padding: 1rem;
 border-radius: 13px;
 background: var(--primary);
 color: var(--clr-white);
+
 }
 .btn-header{
 padding: 10px ;
@@ -723,6 +740,13 @@ background: #F4F5F7;
   justify-content:flex-start;
  gap: 5rem;
 }
+.testi-home img{
+  width: 38.967px;
+height: 38.967px;
+flex-shrink: 0;
+border-radius: 38.967px;
+background:  lightgray;
+}
  .testimonial-container article{
   padding: 0.5rem;
   margin: 1rem;
@@ -805,6 +829,7 @@ margin: 1rem
 /* Footer */
 
 .footer {
+
     background-color: #f4f4f4;
     color: #333;
     text-align: center;
@@ -832,49 +857,23 @@ margin: 1rem
 .footer p {
     margin-bottom: 10px;
 }
-
-.footer input[type="email"] {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    width: 200px;
+.footer-bottom{
+  text-align: center;
 }
-
-.footer button {
-    padding: 10px 20px;
-    background-color:var(--primary);
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.footer button:hover {
-    background-color:var(--primary-hover);
-}
-
-.footer-bottom {
-    border-top: 1px solid #ddd;
-    padding-top: 20px;
-}
-
 @media (min-width: 768px) {
-    .footer {
-        text-align: left;
-        padding: 40px 0;
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 5;
     }
-
-    .footer-section {
-        display: inline-block;
-        vertical-align: top;
-        width: 20%;
-        padding: 0 10px;
+  }
+  @media (min-width:992px) {
+    .footer-container {
+      
+        grid-template-columns: repeat(4,1fr);
+        gap: 5;
     }
-
-    .footer input[type="email"] {
-        width: 80%;
-    }
-}
-/* Pricing.css */
+  }
 .pricing-container {
     display: flex;
     flex-wrap: wrap;
@@ -932,3 +931,170 @@ margin: 1rem
         width: 90%;
     }
 }
+
+/* AboutPage */
+.small-img-about img{
+  width: 50px;
+  margin: 0.5rem;
+}
+.about-testi img{
+  margin-left: 5rem;
+  margin-top: 5rem;
+}
+.about-testi{
+  margin-top: 5rem;
+flex-shrink: 0;
+border-radius: 28px;
+background: rgba(27, 27, 33, 0.89);
+box-shadow: 0px 21px 38px 0px rgba(0, 0, 0, 0.25);
+}
+.about-testi h3{
+  color: #FFF;
+text-align: center;
+font-size: 2rem;
+font-style: normal;
+font-weight: 400;
+line-height: 46.356px; 
+}
+.about-testi p{
+  color: #FFF;
+font-size: 18.542px;
+font-style: normal;
+font-weight: 400;
+line-height: 34.767px; 
+text-align: center;
+}
+@media (min-width:768px) {
+  .about-testi-container{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.about-mission{
+  margin-top: 5rem;
+
+  display: flex;
+padding: 40px 0px;
+justify-content: center;
+align-items: center;
+gap: 108px;
+flex-shrink: 0;
+background: linear-gradient(0deg, rgba(27, 27, 33, 0.92) 0%, rgba(27, 27, 33, 0.92) 100%), url("./assets/mosque.png"), lightgray 50% / cover no-repeat;
+}
+
+.about-mission-container h3{
+  color: #FFF;
+text-align: center;
+font-size: 2rem;
+font-style: normal;
+font-weight: 400;
+line-height: 72.667px; /* 155.556% */
+}
+.about-mission-container h3 span{
+  color: #FFF;
+text-align: center;
+font-size:2rem;
+font-style: normal;
+font-weight: 700;
+line-height: 72.667px; /* 155.556% */
+}
+.about-container-2{
+  margin-top: 5rem;
+}
+.about-container-2  h3{
+  color: var(--dark);
+text-align: center;
+font-size: 2rem;
+font-style: normal;
+font-weight: 400;
+line-height: 72.667px; /* 155.556% */
+}
+.about-container-2 h3 span{
+  color:var(--dark);
+text-align: center;
+font-size:2rem;
+font-style: normal;
+font-weight: 700;
+line-height: 72.667px; /* 155.556% */
+}
+
+.mission-img img{
+  width: 100%;
+}
+.about-container-2 img{
+  width: 300px;
+  height: 300px;
+}
+.last-banner-video{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+background: linear-gradient(0deg, rgba(27, 27, 33, 0.92) 0%, rgba(27, 27, 33, 0.92) 100%), url("./assets/about.png"), lightgray 50% / cover no-repeat;
+}
+.play-button{
+  
+flex-shrink: 0;
+border-radius: var(--radius);
+background-color: var(--primary);
+}
+.last-banner-video {
+  position: relative;
+}
+
+.big-video {
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+video{
+  width: 100%;
+}
+
+.big-video img{
+  width: 250px;
+}
+.small-video img{
+  width: 100px;
+  height: 100px;
+}
+@media (min-width:768px) {
+  .small-video{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5rem;
+  }
+}
+@media (min-width:768px) {
+  .about-mission-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5rem;
+  }
+  .about-container-2{
+     display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5rem;
+    align-items: center;
+  }
+  .last-banner-video{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5rem;
+  }
+
+}
+

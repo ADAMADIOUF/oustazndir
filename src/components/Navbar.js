@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { FaBars, FaTimes } from 'react-icons/fa' // Keep only the icons that are available
+import { FaBars, FaTimes } from 'react-icons/fa' 
 import { Link } from 'react-router-dom'
-
+import a from "../assets/logo.png"
 const Navbar = () => {
   const [click, setClick] = useState(false)
   const [langDropdown, setLangDropdown] = useState(false)
@@ -13,49 +13,29 @@ const Navbar = () => {
   return (
     <nav className='navbar'>
       <div className='navbar-container'>
-        <a href='/' className='navbar-logo'>
-          LOGO
-        </a>
+        <Link to='/' className='logo'>
+          <img src={a} alt='' />
+        </Link>
         <div className='menu-icon' onClick={handleClick}>
           {click ? <FaTimes /> : <FaBars />}
         </div>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           <li className='nav-item'>
             <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-             Home
+              Accueil
             </Link>
           </li>
           <li className='nav-item'>
             <Link to='/pricing' className='nav-links' onClick={closeMobileMenu}>
-              Pricing
+              Tarification
             </Link>
           </li>
           <li className='nav-item'>
             <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
-              About
+              À propos
             </Link>
           </li>
-          <li className='nav-item'>
-            <Link to='/blog' className='nav-links' onClick={closeMobileMenu}>
-              Blog
-            </Link>
-          </li>
-          <li className='nav-item' onClick={toggleLangDropdown}>
-            <span className='nav-links'>
-              Languages <i className='fas fa-caret-down'></i>
-            </span>
-            {langDropdown && (
-              <div className='dropdown-menu'>
-                <a href='#' className='dropdown-item' onClick={closeMobileMenu}>
-                  <img src='/path/to/us-flag.png' alt='US Flag' /> English
-                </a>
-                <a href='#' className='dropdown-item' onClick={closeMobileMenu}>
-                  <img src='/path/to/france-flag.png' alt='France Flag' />{' '}
-                  Français
-                </a>
-              </div>
-            )}
-          </li>
+
           <li className='nav-item'>
             <a
               href='/book-free-evaluation'
@@ -65,7 +45,7 @@ const Navbar = () => {
               Book Free Evaluation
             </a>
           </li>
-          <span className='nav-phone'>+123456789</span>
+          <span className='nav-phone'>+221 78 358 78 73</span>
         </ul>
       </div>
     </nav>

@@ -5,48 +5,51 @@ const Pricing = () => {
   return (
     <div className='pricing-container'>
       <div className='pricing-tier'>
-        <h3>Best Experience</h3>
-        <h2>Elite</h2>
-        <p className='price'>$16 /hour</p>
-        <button>GET STARTED</button>
-        {/* Add the rest of the details for the Elite plan */}
+        <h3>Meilleure Expérience</h3>
+        <h2>Élite</h2>
+        <p className='price'>16 $ /heure</p>
+        <button>COMMENCER</button>
+        {/* Ajoutez le reste des détails pour le plan Élite */}
       </div>
 
       <div className='pricing-tier'>
-        <h3>Best Value</h3>
+        <h3>Meilleur Rapport Qualité-Prix</h3>
         <h2>Pro</h2>
-        <p className='price'>$11.00 /hour</p>
-        <button>GET STARTED</button>
-        {/* Add the rest of the details for the Pro plan */}
+        <p className='price'>11,00 $ /heure</p>
+        <button>COMMENCER</button>
+        {/* Ajoutez le reste des détails pour le plan Pro */}
       </div>
 
       <div className='pricing-tier'>
-        <h3>Essentials</h3>
-        <h2>$9.00 /hour</h2>
+        <h3>Essentiels</h3>
+        <h2>9,00 $ /heure</h2>
         <p className='price'></p>
-        <button>GET STARTED</button>
-        {/* Add the rest of the details for the Essentials plan */}
+        <button>COMMENCER</button>
+        {/* Ajoutez le reste des détails pour le plan Essentiels */}
       </div>
 
       <div className='pricing-tier'>
         <h3>Simple</h3>
-        <h2>$8 /hour</h2>
+        <h2>8 $ /heure</h2>
         <p className='price'></p>
-        <button>GET STARTED</button>
-        {/* Add the rest of the details for the Simple plan */}
+        <button>COMMENCER</button>
+        {/* Ajoutez le reste des détails pour le plan Simple */}
       </div>
 
       <div className='pricing-notes'>
         <p>
-          *Cancellations or changes to the schedule must be submitted through
-          the student dashboard at least 4 hours prior to the lesson start time.
+          *Les annulations ou modifications de l'horaire doivent être soumises
+          via le tableau de bord de l'étudiant au moins 4 heures avant le début
+          du cours.
         </p>
         <p>
-          **Rescheduling must be done within 90 days of the original lesson.
+          **Le report doit être effectué dans les 90 jours suivant le cours
+          original.
         </p>
         <p>
-          ***Discounts are applicable when 2 or more students enroll in the same
-          plan. Discounts are not applied for group lessons.
+          ***Les réductions sont applicables lorsque 2 étudiants ou plus
+          s'inscrivent au même plan. Les réductions ne sont pas appliquées pour
+          les cours en groupe.
         </p>
       </div>
     </div>

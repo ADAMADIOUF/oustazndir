@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
 const Pricing = () => {
@@ -8,32 +9,40 @@ const Pricing = () => {
         <h3>Meilleure Expérience</h3>
         <h2>Élite</h2>
         <p className='price'>16 $ /heure</p>
-        <button>COMMENCER</button>
-        {/* Ajoutez le reste des détails pour le plan Élite */}
+        <Link to={`/booking`}>
+          {' '}
+          <button>COMMENCER</button>
+        </Link>
       </div>
 
       <div className='pricing-tier'>
         <h3>Meilleur Rapport Qualité-Prix</h3>
         <h2>Pro</h2>
         <p className='price'>11,00 $ /heure</p>
-        <button>COMMENCER</button>
-        {/* Ajoutez le reste des détails pour le plan Pro */}
+        <Link to={`/booking`}>
+          {' '}
+          <button>COMMENCER</button>
+        </Link>
       </div>
 
       <div className='pricing-tier'>
         <h3>Essentiels</h3>
         <h2>9,00 $ /heure</h2>
         <p className='price'></p>
-        <button>COMMENCER</button>
-        {/* Ajoutez le reste des détails pour le plan Essentiels */}
+        <Link to={`/booking`}>
+          {' '}
+          <button>COMMENCER</button>
+        </Link>
       </div>
 
       <div className='pricing-tier'>
         <h3>Simple</h3>
         <h2>8 $ /heure</h2>
         <p className='price'></p>
-        <button>COMMENCER</button>
-        {/* Ajoutez le reste des détails pour le plan Simple */}
+        <Link to={`/booking`}>
+          {' '}
+          <button>COMMENCER</button>
+        </Link>
       </div>
 
       <div className='pricing-notes'>

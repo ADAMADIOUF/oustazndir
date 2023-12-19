@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import Pricing from './components/Pricing'
 import TopHeader from './components/TopHeader'
 import About from './components/About'
+import Booking from './components/Booking'
 const App = () => {
   return (
     <BrowserRouter>
@@ -15,6 +16,7 @@ const App = () => {
         <Route path='/about' element={<About />} />
 
         <Route path='/pricing' element={<Pricing />} />
+        <Route path='/booking' element={<Booking />} />
       </Routes>
       <Footer />
     </BrowserRouter>

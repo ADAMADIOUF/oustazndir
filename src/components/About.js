@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import a from '../assets/about.png'
+import a from '../assets/about-img.png'
 import b1 from '../assets/about1.png'
 import b2 from '../assets/about2.png'
 import b3 from '../assets/about3.png'
@@ -25,6 +25,7 @@ import mp1 from "../assets/a.mp4"
 import mp2 from '../assets/2.mp4'
 import mp3 from '../assets/3.mp4'
 import mp4 from '../assets/4.mp4'
+import FirstBanner from './FirstBanner'
 
 
 
@@ -65,7 +66,7 @@ const About = () => {
             faciliter une expérience coranique fluide et enrichissante.
           </p>
         </article>
-        <article>
+        <article className='about-flex'>
           <div>
             <article className='mission-img'>
               <img src={a} alt='' />
@@ -89,6 +90,7 @@ const About = () => {
           </div>
         </article>
       </div>
+
       <div className='about-testi'>
         <img src={b5} alt='' />
         <h3>Et dis : 'Mon Seigneur, augmente-moi en savoir.</h3>
@@ -378,6 +380,7 @@ const About = () => {
           </div>
         </article>
       </div>
+      <FirstBanner />
     </div>
   )
 }

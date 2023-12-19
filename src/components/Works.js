@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaRegCalendarAlt, FaClock, FaBookOpen } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 const Works = () => {
   return (
@@ -34,7 +35,9 @@ const Works = () => {
         </article>
       </div>
       <h3>c'est vraiment aussi simple !</h3>
-      <button className='btn-header'>commencez à apprendre</button>
+      <Link to={`/booking`}>
+        <button className='btn-header'>commencez à apprendre</button>
+      </Link>
     </div>
   )
 }

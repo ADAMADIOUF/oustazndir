@@ -1,19 +1,22 @@
 import React from 'react'
 import a from "../assets/target.png"
-import { FaYoutube } from 'react-icons/fa'
+import c1 from '../assets/c1.png'
+import mp1 from '../assets/a.mp4'
 import { useState } from 'react'
 const FirstBanner = () => {
- const videoUrl =
-   'https://www.youtube.com/embed/nwmrVx9PpWo?si=q1qICOAQHJhDN0_R'
- const [videoSrc, setVideoSrc] = useState('')
+ const [videoVisible, setVideoVisible] = useState({
+   mp1: false,
+   
+ })
 
- const handleIconClick = () => {
-   if (videoSrc) {
-     setVideoSrc('')
-   } else {
-     setVideoSrc(videoUrl)
-   }
+ const playVideo = (videoKey) => {
+   setVideoVisible({ ...videoVisible, [videoKey]: true })
  }
+
+ const closeVideo = (videoKey) => {
+   setVideoVisible({ ...videoVisible, [videoKey]: false })
+ }
+
   return (
     <div className='first-banner'>
       <div className='first-banner-container section-center'>
@@ -246,23 +249,44 @@ const FirstBanner = () => {
             <img src={a} alt='' />
             <h3>Améliorez vos connaissances islamiques</h3>
           </article>
-          <article>
-            <FaYoutube className='youtube-icon' onClick={handleIconClick} />
-            {videoSrc && (
-              <div className='video-container-first-banner'>
-                <iframe
-                  width='560'
-                  height='315'
-                  src={videoSrc}
-                  title='YouTube video player'
-                  frameborder='0'
-                  allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                  allowfullscreen
-                ></iframe>
-              </div>
+          <article className='big-video big-video-first-banner'>
+            {videoVisible.mp1 && (
+              <>
+                <video src={mp1} controls></video>
+                <button
+                  className='close-button'
+                  onClick={() => closeVideo('mp1')}
+                >
+                  X
+                </button>
+              </>
             )}
-            <h3>Écoutez le Coran</h3>
-            <p>Suratul Yusuf</p>
+            {!videoVisible.mp1 && (
+              <>
+                <img
+                  src={c1}
+                  alt='Video Thumbnail'
+                  onClick={() => playVideo('mp1')}
+                />
+                <button
+                  className='play-button'
+                  onClick={() => playVideo('mp1')}
+                >
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='30'
+                    height='35'
+                    viewBox='0 0 30 35'
+                    fill='none'
+                  >
+                    <path
+                      d='M29.8828 17.1L0.258671 34.2035L0.258671 -0.00349236L29.8828 17.1Z'
+                      fill='white'
+                    />
+                  </svg>
+                </button>
+              </>
+            )}
           </article>
         </div>
       </div>

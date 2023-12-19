@@ -3,6 +3,7 @@ import a from "../assets/header1.png"
 import b1 from '../assets/h1.png'
 import b2 from '../assets/h2.png'
 import b3 from '../assets/h3.png'
+import { Link } from 'react-router-dom'
 
 
 const Header = () => {
@@ -74,7 +75,10 @@ const Header = () => {
             sommes dévoués à vous fournir une expérience d'apprentissage
             exceptionnelle qui est à la fois interactive et captivante.
           </p>
-          <button className='btn-header'>"Commencez votre voyage</button>
+          <Link to={`/booking`}>
+            {' '}
+            <button className='btn-header'>"Commencez votre voyage</button>
+          </Link>
         </article>
         <div>
           <article className='header-img'>

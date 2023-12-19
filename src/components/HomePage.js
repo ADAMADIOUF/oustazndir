@@ -10,13 +10,14 @@ import BlogHome from './BlogHome'
 import Questions from './Questions'
 import TopHeader from './TopHeader'
 import FirstBanner from './FirstBanner'
+import { Link } from 'react-router-dom'
 
 const HomePage = () => {
   return (
     <div>
-      <TopHeader/>
+      <TopHeader />
       <Header />
-      <FirstBanner/>
+      <FirstBanner />
       <div className='home section-center'>
         <div className='home-title'>
           <h3>éducation pour une vie supérieure</h3>
@@ -38,7 +39,9 @@ const HomePage = () => {
               étudiez une variété de sujets islamiques tels que le Coran, le
               tajweed, l'histoire islamique, l'aqidah et le fiqh.
             </p>
-            <button className='btn'>inscrivez-vous maintenant</button>
+            <Link to={`/booking`}>
+              <button className='btn'>inscrivez-vous maintenant</button>
+            </Link>
           </article>
           <article className='home-article-3'>
             <span className='icon'>
@@ -53,12 +56,10 @@ const HomePage = () => {
       <FirstChat />
       <Iqra />
       <Ratings />
-    
-      <Testimonial
-        
-      />
-      <BlogHome/>
-      <Questions/>
+
+      <Testimonial />
+      <BlogHome />
+      <Questions />
     </div>
   )
 }

@@ -36,16 +36,14 @@ const Navbar = () => {
             </Link>
           </li>
 
-          <li className='nav-item'>
-            <a
-              href='/book-free-evaluation'
-              className='nav-links'
-              onClick={closeMobileMenu}
-            >
-              Book Free Evaluation
-            </a>
+          <li className='nav-item booking-btn'>
+            <Link to='/booking' className='nav-links' onClick={closeMobileMenu}>
+              Réservez une évaluation gratuite
+            </Link>
           </li>
-          <span className='nav-phone'>+221 78 358 78 73</span>
+          <span className='nav-phone'>
+            <a href='tel:+221 78 358 78 73'>+221 78 358 78 73</a>
+          </span>
         </ul>
       </div>
     </nav>

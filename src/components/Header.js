@@ -3,6 +3,8 @@ import a from "../assets/header1.png"
 import b1 from '../assets/h1.png'
 import b2 from '../assets/h2.png'
 import b3 from '../assets/h3.png'
+import video from '../assets/abba.mp4'
+
 import { Link } from 'react-router-dom'
 
 
@@ -82,7 +84,14 @@ const Header = () => {
         </article>
         <div>
           <article className='header-img'>
-            <img src={a} alt='' className='header-big-img' />
+            <video
+              src={video}
+              controls
+              poster={a}
+              className='video-element'
+            >
+              Your browser does not support the video tag.
+            </video>
           </article>
           <div className='header-bg-header'>
             <article className='header-bg-content'>
